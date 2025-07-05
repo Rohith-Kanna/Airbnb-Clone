@@ -1,0 +1,183 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffff;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+}
+.top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  margin: 20px;
+}
+.logo {
+  width: 140px;
+  height: 40px;
+  color: red;
+  margin: 8px 0px;
+}
+.pages {
+  display: flex;
+  width: 220px;
+  transform: scale(1.4);
+  align-items: center;
+  margin-left: 0px;
+  gap: 35px;
+}
+.home,
+.experiences,
+.services {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.home {
+  border-bottom: 2px solid black;
+}
+
+.experiences,
+.services {
+  color: gray;
+  transition: 0.2s;
+}
+
+.experiences:hover,
+.services:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.options {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 80px;
+  gap: 10px;
+}
+.host {
+  display: flex;
+  padding: 8px;
+  font-size: 17px;
+}
+.globe,
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #e4e4e4;
+  padding: 8px;
+  border-radius: 50%;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.globe:hover,
+.menu:hover {
+  background-color: #b7b7b7;
+}
+
+.host:hover {
+  background-color: #b7b7b7;
+  border-radius: 20px;
+  justify-content: center;
+  transition: 0.2s;
+  align-items: center;
+}
+/* Style for section feed strts here */
+.clone-body {
+  margin: 40px 100px;
+}
+
+.pic {
+  width: 100%;
+  height: 202px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.feed-1 {
+  width: 208px;
+  flex-shrink: 0;
+  position: relative;
+  scroll-snap-align: start;
+  border-radius: 20px;
+  flex: 0 0 auto;
+}
+.heart,
+.guest {
+  position: absolute;
+}
+.heart {
+  width: 25px;
+
+  right: 7px;
+  top: 10px;
+  fill: #eae6e1;
+  transition: 0.2s;
+}
+.heart:hover {
+  fill: #888888;
+  transform: scale(1.2);
+}
+.guest {
+  top: 0px;
+  left: 9px;
+  font-size: 13px;
+  transition: 0.2s;
+  font-weight: bold;
+  background-color: #eae6e1;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 22px rgb(144, 144, 144);
+}
+
+.guest:hover {
+  background-color: #888888;
+  transform: scale(1.02);
+}
+.feed-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26px;
+}
+
+.left:hover,
+.right:hover {
+  background-color: rgb(218, 218, 218);
+  border-radius: 22px;
+}
+
+.hotel {
+  width: 208px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.description {
+  color: gray;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.feed-section {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* Aligns items from left */
+  box-sizing: border-box;
+  padding: 20px 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.feed-section::-webkit-scrollbar {
+  display: none;
+}
